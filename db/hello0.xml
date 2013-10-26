@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/hello0.xml</label>
+    <type>TextScreen</type>
+    <text>Next</text>
+    <title>Whats UP</title>
+    <okurl>hello1</okurl>
+    <cancelurl>hello0</cancelurl>
+  </object>
+</element>

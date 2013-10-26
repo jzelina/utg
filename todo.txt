@@ -4,22 +4,15 @@ about
 #####
 
 Build a Program to create a "universal" GUI for different vendors terminals.
-The defined GUI is web based and translate to the terminals who request pages.
+The universal GUI is web based and translate to the terminals who request pages.
+Common Objects like TextScreen, Menus, Images allow to navigate to actions.
+Actions in this Framework can be available for all Terminals then.
 
 
 todo
 #####
 
-- define elements
-- create elements
-- map element to devices
-- GUI to build "GUI"
-- data formats to store projects
-- generator?
-
-
-#sample
-
-- GUI to create Text screen
-- write text screen to file
-- open text screen from terminal
+- link pages
+- increase objects: Menu, Details
+- add actions
+- edit page
