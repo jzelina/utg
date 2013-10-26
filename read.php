@@ -16,13 +16,27 @@
 	$object = read($label,$terminal);
 	#print_r($object);
 	
-	# Terminal Header
+	############## Apps ####################
+	if ($object[0]["type"] == "Application")
+		{
+		@include("action/action.php");
+		# detect application
+		# execute app
+		# return what to do next
+		}
 	
+	############## Terminal ####################
 	#echo for terminal
 	if ($object[0]["type"] == "TextScreen")
 		{
 		#echo "Text Screen object";
 		echo TEXTSCREEN($object,$terminal,$lang);
+		}
+	
+	if ($object[0]["type"] == "TextMenu")
+		{
+		#echo "Text Menu object";
+		echo TEXTMENU($object,$terminal,$lang);
 		}
 	
 	if ($object[0]["type"] == "none")

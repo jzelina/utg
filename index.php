@@ -31,7 +31,10 @@ $lang["cancel"] = "CANCEL";
 # setup
 if ($_GET['setup'] != "")
 	{
-	@include("create.php"); #GUI to create files
+	#Include Create Scenario GUI file
+	if (file_exists("create/".$_GET['setup'])) 
+	{ @include("create/".$_GET['setup']); } 
+	else { @include("create.php");}
 	exit;
 	}
 
@@ -55,7 +58,7 @@ if ($_GET['test'] == "aastra")
 $out =  '<html><head><title>'.$title.'</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /></head><body>';
 $out .= 'Welcome to UTG';
 $out .= '<br /><a href="?setup=1">Create Page</a>';
-$out .= '<br /><br />Pages: ';
+$out .= '<br /><br />Browse Page: ';
 
 $handle = opendir("db/");
 	while ($res = readdir($handle)) { if (!(is_dir($res)) && preg_match("/\.xml/",$res) )
