@@ -1,0 +1,25 @@
+#Universal Terminal GUI
+
+about
+#####
+
+Build a Program to create a "universal" GUI for different vendors terminals.
+The defined GUI is web based and translate to the terminals who request pages.
+
+
+todo
+#####
+
+- define elements
+- create elements
+- map element to devices
+- GUI to build "GUI"
+- data formats to store projects
+- generator?
+
+
+#sample
+
+- GUI to create Text screen
+- write text screen to file
+- open text screen from terminal
