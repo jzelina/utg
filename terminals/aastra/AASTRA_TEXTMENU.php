@@ -9,7 +9,7 @@ function AASTRA_TEXTMENU($object,$terminal,$lang)
 	$out = '<?xml version="1.0" encoding="UTF-8"?>';
 	$out .= '<AastraIPPhoneTextMenu destroyOnExit="yes"';
 	if ($object[0]["okurl"] != "") { $out .= ' doneAction="'.$terminal['ME'].'?read='.$object[0]["okurl"].'"';}
-	if ($object[0]["okurl"] != "") { $out .= ' cancelAction="'.$terminal['ME'].'?read='.$object[0]["cancelurl"].'"';}
+	if ($object[0]["cancelurl"] != "") { $out .= ' cancelAction="'.$terminal['ME'].'?read='.$object[0]["cancelurl"].'"';}
 	$out .= '>';
 	$out .= '<Title>'.$object[0]["title"].'</Title>';
 	if ($object[0]["line1text"] != "") { $out .= '<MenuItem><Prompt>'.$object[0]["line1text"].'</Prompt><URI>'.$terminal['ME'].'?read='.$object[0]["line1url"].'</URI></MenuItem>'; }

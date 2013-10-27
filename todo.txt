@@ -2,5 +2,7 @@ todo
 #####
 - GUI design
 
-- increase objects: Details
-- edit page
+- add objects: Input, Picture, more details
+- edit pages
+- display page relations
+- "project" support

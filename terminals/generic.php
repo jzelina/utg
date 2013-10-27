@@ -17,6 +17,12 @@ function TEXTMENU($object,$terminal,$lang)
 	if ($terminal['VENDOR'] == 'HTML'){ echo HTML_TEXTMENU($object,$terminal,$lang); }
 	}
 
+function INPUTSCREEN($object,$terminal,$lang)
+	{
+	if ($terminal['VENDOR'] == 'AASTRA'){ @include("aastra/AASTRA_INPUTSCREEN.php"); echo AASTRA_INPUTSCREEN($object,$terminal,$lang); }
+	if ($terminal['VENDOR'] == 'HTML'){ echo HTML_INPUTSCREEN($object,$terminal,$lang); }
+	}
+	
 ### HTML - TEXTSCREEN
 # $object = HTML_TEXTSCREEN($object,$terminal);
 #
@@ -57,5 +63,24 @@ function HTML_TEXTMENU($object,$terminal,$lang)
 	$out .= '</body><html>';
 	return $out;
 	}	
+
+### HTML - INPUTSCREEN
+# $object = HTML_INPUTSCREEN($object,$terminal,$lang);
+#
+function HTML_INPUTSCREEN($object,$terminal,$lang)
+	{
+	$out =  '<html><head><title>'.$object[0]["title"].'</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script></head>';
+	$out .= '<div data-role="header"><h1>'.$object[0]["title"].'</h1></div>';
+	$out .= '<body>';
+	#todo
 	
+    if ($object[0]["okurl"] != "") {$out .= '<a href="?read='.$object[0]["okurl"].'" data-role="button" data-icon="check">'.$lang["ok"].'</a>';}
+	if ($object[0]["cancelurl"] != "") {$out .= '<a href="?read='.$object[0]["cancelurl"].'" data-role="button" data-icon="delete">'.$lang["cancel"].'</a>';}
+	
+	$out .= '</body><html>';
+	return $out;
+	}		
 ?>

@@ -48,8 +48,8 @@ if ($_GET['read'] != "")
 # main
 
 $out =  '<html><head><title>'.$title.'</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /></head><body>';
-$out .= 'Welcome to UTG';
-$out .= '<br /><a href="?setup=1">Create Page</a>';
+$out .= '<b>Welcome to '.$title.' (UTG)</b>';
+$out .= '<br /><a href="?setup=1">Create New Page</a>';
 $out .= '<br /><br />Browse Page: ';
 
 $handle = opendir("db/");

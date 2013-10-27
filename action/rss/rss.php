@@ -17,7 +17,6 @@ function APP_RSS_GET_FEED($URL,$terminal)
 	if ($object[0]["function"] == "APP_RSS_GET_FEED")
 		{
 		#Get RSS Feed
-		$object[0]["URL"] = "http://feeds.feedburner.com/TechCrunch/";
 		$items = APP_RSS_GET_FEED($object[0]["URL"],$terminal);
 		
 		if ($_GET['item'] != "")
