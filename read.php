@@ -9,6 +9,8 @@
 	$terminal = "";
 	$terminal = terminal_detect($_SERVER);
 	$terminal['ME'] = $ME; 
+	
+	#test
 	#$terminal['VENDOR'] = 'AASTRA';
 	
 	# Read object
@@ -20,9 +22,6 @@
 	if ($object[0]["type"] == "Application")
 		{
 		@include("action/action.php");
-		# detect application
-		# execute app
-		# return what to do next
 		}
 	
 	############## Terminal ####################

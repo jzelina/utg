@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/weather_berlin.xml</label>
+    <type>Application</type>
+    <app>wunderground</app>
+    <function>APP_WUNDERGROUND_GET_WEATHER</function>
+    <description>Get Weather for Berlin</description>
+    <location>zmw:00000.10.10389</location>
+    <title>Weather Berlin</title>
+    <okurl>Menu1</okurl>
+    <cancelurl>Menu1</cancelurl>
+  </object>
+</element>

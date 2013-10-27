@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/rss.xml</label>
+    <type>Application</type>
+    <app>rss</app>
+    <function>APP_RSS_GET_FEED</function>
+    <description>Get Techcrunch RSS Feed</description>
+    <URL>http://feeds.feedburner.com/TechCrunch/</URL>
+    <title>Techcrunch RSS</title>
+    <okurl>Menu1</okurl>
+    <cancelurl>Menu1</cancelurl>
+  </object>
+</element>

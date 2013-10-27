@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/crunchbase.xml</label>
+    <type>Application</type>
+    <app>crunchbase</app>
+    <function>APP_CRUNCHBASE_GET_COMPANY</function>
+    <description>Get Crunchbase Info of TC</description>
+    <company>TechCrunch</company>
+    <title>Crunchbase</title>
+    <okurl>Menu1</okurl>
+    <cancelurl>Menu1</cancelurl>
+  </object>
+</element>

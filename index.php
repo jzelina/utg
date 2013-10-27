@@ -45,14 +45,6 @@ if ($_GET['read'] != "")
 	exit;
 	}
 	
-	
-#test aastra
-if ($_GET['test'] == "aastra")
-	{
-	#show test menu aastra
-	exit;
-	}
-	
 # main
 
 $out =  '<html><head><title>'.$title.'</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /></head><body>';

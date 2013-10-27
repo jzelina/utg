@@ -56,7 +56,7 @@
 	
 	$handle = opendir("create/");
 	while ($res = readdir($handle)) { if (!(is_dir($res)) && preg_match("/\.php/",$res) )
-	$apps .= '<a href="?setup='.$res.'">'.str_replace(".php", "", $res).'</a>';
+	$apps .= '<br /><a href="?setup='.$res.'">'.str_replace(".php", "", $res).'</a>';
 	}
 	
 	echo '<html><head><title>'.$title.'</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /></head>';
@@ -116,7 +116,7 @@
 				</tr>
 				<tr><td></td><td><hr></td>
 				<tr>
-					<td>Apps</td>
+					<td><b>Apps</b></td>
 					<td>'.$apps.'</td>
 				</tr>
 				<tr>

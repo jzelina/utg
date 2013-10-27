@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/Welcome.xml</label>
+    <type>TextScreen</type>
+    <text>Welcome to Techcrunch lets make something great.</text>
+    <title>Welcome to Techcrunch</title>
+    <okurl>Menu1</okurl>
+    <cancelurl>Menu1</cancelurl>
+  </object>
+</element>

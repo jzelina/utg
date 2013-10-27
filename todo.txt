@@ -1,6 +1,5 @@
 todo
 #####
-- add actions (Weather, ?, ?)
 - GUI design
 
 - increase objects: Details

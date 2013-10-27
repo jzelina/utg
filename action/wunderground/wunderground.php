@@ -29,7 +29,7 @@ function APP_WUNDERGROUND_GET_WEATHER($location,$terminal)
 		$object[1] = $object[0];
 		$object[0]["type"] = "TextScreen";
 		$object[0]["title"] = 'Weather in '.$weather["location"];
-		$object[0]["text"] = 'Current Temp:'.$weather["temp_c"].' Weather: '.$weather["weather"];
+		$object[0]["text"] = 'Current Temp:'.$weather["temp_c"].' Weather: '.$weather["weather"].' Location-Time: '.date("H:i:s", $weather["local_epoch"]);
 		}
 	
 ?>

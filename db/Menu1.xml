@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<element>
+  <object>
+    <label>db/Menu1.xml</label>
+    <type>TextMenu</type>
+    <title>Universal T. GUI</title>
+    <line1text>Welcome</line1text>
+    <line1url>Welcome</line1url>
+    <line2text>Weather Berlin</line2text>
+    <line2url>weather_berlin</line2url>
+    <line3text>Techcrunch RSS</line3text>
+    <line3url>rss</line3url>
+	<line4text>Crunchbase TC</line4text>
+    <line4url>crunchbase</line4url>
+  </object>
+</element>

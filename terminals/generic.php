@@ -40,6 +40,9 @@ function HTML_TEXTMENU($object,$terminal,$lang)
 	if ($object[0]["line1text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line1url"].'">'.$object[0]["line1text"].'</a>';}
 	if ($object[0]["line2text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line2url"].'">'.$object[0]["line2text"].'</a>';}
 	if ($object[0]["line3text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line3url"].'">'.$object[0]["line3text"].'</a>';}
+	if ($object[0]["line4text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line4url"].'">'.$object[0]["line4text"].'</a>';}
+	if ($object[0]["line5text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line5url"].'">'.$object[0]["line5text"].'</a>';}
+	if ($object[0]["line6text"] != "") {$out .= '<br /><a href="?read='.$object[0]["line6url"].'">'.$object[0]["line6text"].'</a>';}
 	$out .= '</body><html>';
 	return $out;
 	}	
